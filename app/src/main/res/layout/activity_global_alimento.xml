@@ -1,0 +1,279 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GlobalAlimento"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alimento seleccionado"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="32dp"
+                android:text="Nombre"
+                android:padding="5dp"
+                android:layout_marginRight="100dp"
+                />
+
+            <TextView
+                android:id="@+id/NombreView"
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="32dp"
+                android:text="Tipo"
+                android:padding="5dp"
+                android:layout_marginRight="100dp"
+                />
+
+            <TextView
+                android:id="@+id/ViewTipo"
+                android:layout_width="155dp"
+                android:layout_height="32dp"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:layout_width="127dp"
+                android:layout_height="32dp"
+                android:text="Porción"
+                android:padding="5dp"
+                android:layout_marginRight="90dp"
+                />
+
+            <TextView
+                android:id="@+id/ViewPorcion"
+                android:layout_width="155dp"
+                android:layout_height="32dp"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:layout_width="127dp"
+                android:layout_height="32dp"
+                android:text="Unidad de medida"
+                android:padding="5dp"
+                android:layout_marginRight="90dp"
+                />
+
+            <TextView
+                android:id="@+id/UnidadMedidaView"
+                android:layout_width="155dp"
+                android:layout_height="32dp"
+                android:padding="5dp"
+                android:text="@string/g"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:layout_width="127dp"
+                android:layout_height="32dp"
+                android:text="Calorías"
+                android:padding="5dp"
+                android:layout_marginRight="90dp"
+                />
+
+            <TextView
+                android:id="@+id/CaloriasView"
+                android:layout_width="155dp"
+                android:layout_height="32dp"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="129dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="88dp"
+                android:padding="5dp"
+                android:text="Carbohidratos" />
+
+            <TextView
+                android:id="@+id/CarbohidratosView"
+                android:layout_width="155dp"
+                android:layout_height="32dp"
+                android:padding="5dp"
+
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+
+                android:layout_width="109dp"
+                android:layout_height="32dp"
+                android:text="Proteínas"
+                android:padding="5dp"
+                android:layout_marginRight="100dp"
+                />
+
+            <TextView
+                android:id="@+id/ProteinasView"
+                android:layout_width="155dp"
+                android:layout_height="32dp"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="109dp"
+                android:layout_height="32dp"
+                android:text="Grasas"
+                android:padding="5dp"
+                android:layout_marginRight="100dp"
+                />
+
+            <TextView
+                android:id="@+id/GrasasView"
+                android:layout_width="155dp"
+                android:layout_height="32dp"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="32dp"
+                android:text="Cantidad"
+                android:padding="5dp"
+                android:layout_marginRight="100dp"
+                />
+
+            <EditText
+                android:id="@+id/CantidadView"
+                android:layout_width="155dp"
+                android:layout_height="32dp"
+                android:singleLine="true"
+                android:maxLength="2"
+                android:inputType="number"
+                android:padding="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="32dp"
+                android:text="Concepto"
+                android:padding="5dp"
+                android:layout_marginRight="69dp"
+                />
+
+            <TextView
+                android:id="@+id/ConceptoView"
+                android:layout_width="155dp"
+                android:layout_height="32dp"
+                android:padding="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/buttontransicioncalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:text="Calcular"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/buttontransicionguardar"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:text="Agregar"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

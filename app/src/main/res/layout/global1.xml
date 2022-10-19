@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/esquinas_redondeadas"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+               >
+
+                <TextView
+                    android:id="@+id/calendar"
+                    android:layout_width="76dp"
+                    android:layout_height="31dp"
+                    android:textAlignment="center"
+                    android:textSize="13dp"
+                    android:inputType="number"
+
+                    />
+
+
+                <ImageView
+                    android:src="@drawable/ic_mood"
+                    android:layout_width="65dp"
+                    android:layout_height="31dp"
+                    android:layout_marginHorizontal="35dp"
+                    />
+                <TextView
+                    android:id="@+id/clockview"
+                    android:layout_width="76dp"
+                    android:layout_height="31dp"
+                    android:textAlignment="center"
+                    android:textSize="13dp"
+                    android:inputType="number"
+
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/PesoVista"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="89dp"
+            android:layout_height="18dp"
+            android:text="Peso(Kg)"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/VistaEstatura"
+            android:layout_width="32dp"
+            android:layout_height="18dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="74dp"
+            android:layout_height="16dp"
+            android:text="Estatura(m)"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/VistaEdad"
+            android:layout_width="32dp"
+            android:layout_height="17dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="33dp"
+            android:layout_height="19dp"
+            android:text="Edad"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginVertical="17dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="15dp"
+                android:text="Kcal"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/SumaCal"
+                android:layout_width="50dp"
+                android:layout_height="15dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="33dp"
+                android:layout_height="18dp"
+                android:text="/"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/VistaKilocalorias"
+                android:layout_width="50dp"
+                android:layout_height="15dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:gravity="center">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="18dp"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/VistaCaloriasGrasas"
+            android:layout_width="33dp"
+            android:layout_height="18dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="32dp"
+                android:layout_height="17dp"
+                android:text="/"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/VistaCaloriasPorGramoGrasas"
+            android:layout_width="32dp"
+            android:layout_height="17dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="18dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="45dp"
+                        android:layout_height="18dp"
+                        android:text="Grasas"
+                        android:textAlignment="center"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        >
+                    </TextView>
+                </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="18dp"
+                    android:orientation="horizontal">
+        <TextView
+            android:id="@+id/VistaCaloriasProteinas"
+            android:layout_width="33dp"
+            android:layout_height="18dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="33dp"
+            android:layout_height="18dp"
+            android:text="/"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/VistaCaloriasPorGramoProteinas"
+            android:layout_width="33dp"
+            android:layout_height="18dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="18dp"
+                    android:gravity="center">
+                <TextView
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:text="Proteinas"
+                    android:textAlignment="center"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="18dp"
+                    android:orientation="horizontal">
+                    <TextView
+                       android:id="@+id/VistaCaloriasCarbohidratos"
+                        android:layout_width="33dp"
+                        android:layout_height="18dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="18dp"
+                        android:text="/"
+                        android:textAlignment="center"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/VistaCaloriasPorGramoCarbohidratos"
+                        android:layout_width="33dp"
+                        android:layout_height="18dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="18dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:text="Carbohidratos"
+                        android:textAlignment="center"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+
+</FrameLayout>

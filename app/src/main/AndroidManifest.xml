@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prueba">
+
+    <application
+        android:allowBackup="false"
+        android:usesCleartextTraffic="true"
+        android:icon="@drawable/ic_mood"
+        android:label="Personal"
+        android:roundIcon="@drawable/ic_mood"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Principal" />
+        <activity android:name=".Plan" />
+        <activity android:name=".Ejercicios" />
+        <activity android:name=".registroActivity1" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".transicionplan" />
+        <activity android:name=".transicionejercicios" />
+        <activity android:name=".recomendaciones_ejercicios" />
+        <activity android:name=".recomendaciones_plan" />
+        <activity android:name=".GlobalAlimento" />
+        <activity android:name=".VistaCalendario" />
+        <activity android:name=".GlobalEjercicio" />
+        <activity android:name=".VistaCalendarioEjercicio" />
+        <activity android:name=".procesoPerfilPuente"/>
+
+
+       <receiver android:name=".AlarmReceiver"
+           android:exported="true"
+           android:enabled="true"
+           android:permission="TODO">
+       </receiver>
+
+
+        <receiver android:name=".AlarmReceiverEjercicios"
+            android:exported="true"
+            android:enabled="true"
+            android:permission="TODO">
+        </receiver>
+
+    </application>
+</manifest>
